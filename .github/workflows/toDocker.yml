@@ -3,6 +3,7 @@ name: Docker build image and push
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   quality:
