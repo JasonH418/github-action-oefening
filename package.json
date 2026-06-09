@@ -1,0 +1,22 @@
+{
+  "name": "simple-node-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js app with Jest testing",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "node --check app.js && node --check sum.test.js",
+    "build": "mkdir -p dist && cp app.js dist/app.js",
+    "start": "node dist/app.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "babel-jest": "^29.0.0",
+    "@babel/preset-env": "^7.0.0"
+  }
+}
